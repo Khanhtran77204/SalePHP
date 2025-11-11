@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  php:
+    build: .
+    container_name: php_shop
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    restart: always
